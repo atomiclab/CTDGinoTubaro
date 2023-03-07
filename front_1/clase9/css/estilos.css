@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+   /*padding: 0;*/
+}
+
+/* header */
+
+.header-container-top {
+  background-color: #222222;
+  color: #f3f3f3;
+  font-size: 10px;
+}
+
+.header-lista {
+  list-style: none;
+}
+
+.header-container-bottom {
+  background-color: #f0a83e;
+}
+
+.logo {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.texto-logo-top {
+  color: #3c2313;
+}
+
+.nav-lista {
+  list-style: none;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+/* main */
+
+.bienvenida {
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+}
+section{
+  width: 100%;
+}
+.banner{
+  background-image: url(../img/bowl-and-pet-daities-on-green-background\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 470px;
+}
+.hero{
+  text-align: center;
+  margin: 20px;
+}
+.maintxt{
+
+}
+.subtxt{
+  background-color: #f0a83e;
+  text-align: center;
+}
+
+
+.main-footer{
+background-color: #3C2313;
+color: #ffffff;
+font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: 700;
+}
+.item-footer{
+  font-size: 20px;
+}
+.subitem-footer{
+  font-size: 12px;
+  color: #8A8787;
+}
