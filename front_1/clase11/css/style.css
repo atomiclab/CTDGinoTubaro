@@ -42,6 +42,8 @@ a{
     background-color: #E5E5E5;
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .leftbox{
     flex-grow: 0.5;
@@ -59,6 +61,7 @@ a{
     background-image: url(../img/banner.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 200px;
 }
 .rounded{
     border-radius: 10px;
@@ -144,5 +147,5 @@ display: flex;
 }
 body{
     background-color: #016F01;
-
+    height: 100vh;
 }
