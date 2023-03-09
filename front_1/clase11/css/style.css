@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
+
+* {
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: white;
+    padding: 0 10px 0 0;
+    text-decoration: none;
+}
+
+.headerpadre{
+    background-color: #016F01;
+    color: white;
+    display: flex;
+    width: 100%;
+
+}
+.logo{
+    align-items: center;
+    flex-grow: 0.2;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 30px;
+}
+.imglogo{
+    height: 70px;
+}
+.menupadre{
+    align-items: center;
+    display: flex;
+    flex-grow: 0.8;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 30px;
+}
+.contenido{
+    background-color: #E5E5E5;
+    display: flex;
+    width: 100%;
+}
+.leftbox{
+    flex-grow: 0.5;
+    box-sizing: border-box;
+}
+.big{
+    margin: 20px;
+}
+.rightbox{
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0.5;
+}
+.backgroundkito{
+    background-image: url(../img/banner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.rounded{
+    border-radius: 10px;
+}
+.title{
+display: flex;
+}
+.titleright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title>p,.titleright>p{
+    color: red;
+    padding: 10px;
+    box-sizing:  border-box;
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px 20px 0 20px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+   
+}
+.leftbox>p{
+    font-weight: bold;
+    margin-left: 5px;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+}
+.white{
+    background-color: white;
+}
+.kito{
+    width: 100px;
+}
+.rightboxcontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top5{
+    margin-left: 30px;
+    font-size: large;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 20px 0 60px 0;
+
+}
+.piedepagina{
+    display: flex;
+    background-color: #016F01;
+    padding: 20px 0 20px 20px;
+
+}
+.navfooter{
+    flex-grow: 0.5;
+    flex-direction: column;
+ 
+}
+.navfooter>ul{
+    list-style: none; 
+    line-height: 29px;
+}
+.navlogo{
+    flex-grow: 0.5;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    padding-right: 20px;
+}
+.copy{
+    display: block;
+    color: white;
+    background-color: #016F01;
+    text-align: center;
+    font-size: 8px;
+    
+}
+body{
+    background-color: #016F01;
+
+}
