@@ -1,0 +1,215 @@
+<!-- /* Examen de Front end 1
+/* Alumno: Gino Tubaro
+/* Fecha abril 2023
+/* Profesora Karin Stricker
+/* Carrera Certified Tech Developer - Digital House -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Sportit</title>
+</head>
+
+<body>
+    <header>
+        <div class="mainheader">
+            <div class="logo"><img src="img/logo.svg" alt="SportIT logo"></div>
+            <div class="menu-nav">
+                <nav>
+                    <ul>
+                        <li><a href="#">Sports</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Trainning</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div>
+                <a href="#"><button class="btn shadow">Contact</button></a>
+            </div>
+            <!--VA EL BIGMAC que va a estar oculto-->
+            <div class="hamburguesa">
+                <input type="checkbox" id="toggle" hidden>
+                <label for="toggle" class="button"></label>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">Sports</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Trainning</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><label for="toggle" class="closebutton">Close menu</i></label></li>
+                    </ul>
+
+                </nav>
+            </div>
+            <!-- Se termino-->
+        </div>
+    </header>
+    <main>
+        <div class="banner">
+            <div class="guy">
+                <img src="img/padel-intro.png" alt="a guy playing paddle">
+            </div>
+            <div class="event-title">
+                <div>
+                    <h1>LIVE: Follow the Telcel Huawei Mexico Open 2022 for free</h1>
+                    <!--La tipografia se agranda o achica dependiendo del viewport-->
+                </div>
+                <div>
+                    <h2>The final Open of the 2022 World Padel Tour season is underway, don't miss out on any of the
+                        action!</h2>
+                </div>
+                <div><a href="#"><button class="btn">Contact</button></a></div>
+            </div>
+        </div>
+    </main>
+
+    <section class="pros">
+        <div class="pros-main alignleft">
+            <p> What's different between pros?</p>
+        </div>
+        <div class="pros-description alignleft">
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet consequat purus sit amet
+                sodales. In faucibus ut nisi eu dignissim. Vestibulum fringilla velit sed tincidunt tincidunt.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="flexcards">
+            <div class="card light">
+                <div class="headerhighlight">
+                    <div class="numberhighlight">01</div>
+                    <div class="texthightlight">Advance built-in reports</div>
+                </div>
+                <div class="descriptionhighlight">
+                    Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus
+                    pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget,
+                    consequat dolor.
+                </div>
+            </div>
+            <div class="card light">
+                <div class="headerhighlight">
+                    <div class="numberhighlight">02</div>
+                    <div class="texthightlight">Everything you need in one place</div>
+                </div>
+
+                <div class="descriptionhighlight">
+                    Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus
+                    pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget,
+                    consequat dolor.
+                </div>
+            </div>
+            <div class="card heavy">
+                <div class="headerhighlight">
+                    <div class="numberhighlight">03</div>
+                    <div class="texthightlight">Track company-wide progress</div>
+                </div>
+                <div class="descriptionhighlight">
+                    Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus
+                    pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget,
+                    consequat dolor.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="BoM">
+        <h3>Best of the month</h3>
+        <div class="BoM-cards">
+            <article class="BoM-article">
+                <div><img src="img/avatar-sanyo.png" alt="Sanyo" class="pfp"></div>
+                <div class="BoM-name">Sanyo</div>
+                <div class="BoM-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ullam sint
+                    labore, sit optio
+                    voluptas, perferendis blanditiis repudiandae consequuntur nulla et modi, magnam exercitationem
+                    dolorem error doloremque iste consectetur nesciunt?</div>
+
+            </article>
+            <article class="BoM-article">
+                <div><img src="img/avatar.lebron.png" alt="Lebron" class="pfp"></div>
+                <div class="BoM-name">Lebron</div>
+                <div class="BoM-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ullam sint
+                    labore, sit optio
+                    voluptas, perferendis blanditiis repudiandae consequuntur nulla et modi, magnam exercitationem
+                    dolorem error doloremque iste consectetur nesciunt?</div>
+
+            </article>
+
+            <article class="BoM-article">
+                <div><img src="img/avatar-navarro.png" alt="Navarro" class="pfp"></div>
+                <div class="BoM-name">Navarro</div>
+                <div class="BoM-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ullam sint
+                    labore, sit optio
+                    voluptas, perferendis blanditiis repudiandae consequuntur nulla et modi, magnam exercitationem
+                    dolorem error doloremque iste consectetur nesciunt?</div>
+
+            </article>
+        </div>
+        <div><a href="#"><button class="btn aclara">More</button></a></div>
+    </div>
+
+    <section class="pros"> <!--reciclando codigo de otra seccion-->
+        <div class="pros-main">
+            <p> Get to know the best </br>teams of the year</p>
+        </div>
+        <div class="pros-description alignright">
+            <div><a href="#"><button class="btn invert azul">Go for it</button></a></div>
+        </div>
+    </section>
+
+    <footer> <!-- El footer cambia de orden (invierte) en version mobile, por eso el siguiente div-->
+        <div class="divfooter">
+            <div class="column-footer fullwidth">
+                <div class="logofooter"><img src="img/logoclaro.png" alt="SportIT logo" class="logoclaro"></div>
+                <div class="social fullwidth">
+                    <a href="#"><i class="fa-brands fa-square-facebook fa-xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-youtube fa-xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-twitter fa-xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-pinterest fa-xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram fa-xl"></i></a>
+                </div>
+            </div>
+            <div class="links fullwidth">
+                <div class="column-footer">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="column-footer">
+                    <ul>
+                        <li><a href="#">Training</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column-footer">
+                <form action="#" method="post">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" maxlength="50" autocomplete="email"
+                        placeholder="Update in your inbox" class="inboxform"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                    <input type="submit" value="GO" class="btngo">
+                </form>
+            </div>
+        </div>
+        <div class="copy">Copyright 2020. All rights Reserved.</div>
+
+    </footer>
+</body>
+
+</html>

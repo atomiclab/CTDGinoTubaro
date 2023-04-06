@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios 1</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <style>
+      input:required ~ label::before {
+        content: "*";
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="login">
+      <h3>Login</h3>
+      <form action="contacto.html">
+        <fieldset>
+          <legend>Datos personales</legend>
+
+          <!-- Input text con mínimo y máximo con oninvalid="setCustomValidity('Por favor, completar correctamente')"-->
+          <label for="nombre">Nombre y apellido (Obligatorio)</label>
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            required
+            placeholder="Juan Perez"
+            minlength="5"
+            maxlength="20"
+            oninvalid="setCustomValidity('Por favor, completar correctamente FRONTENDIDIDID')"
+          />
+
+          <!-- Input tel con pattern [0-9]{3}-[0-9]{5} -->
+          <label for="tel">Tel</label>
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            pattern="[0-9]{3}-[0-9]{5}"
+            placeholder="333-44444"
+          />
+
+          <!-- Input email -->
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+
+          <!-- input password -->
+          <label for="password">Contraseña</label>
+          <input type="password" name="password" id="password" />
+
+          <!-- textarea -->
+          <label for="comentarios">Comentarios (Obligatorio)</label>
+          <textarea
+            name="comentarios"
+            id="comentarios"
+            cols="30"
+            rows="5"
+            placeholder="Escriba aquí sus comentarios"
+            required
+            minlength="5"
+            maxlength="20"
+          ></textarea>
+
+          <!-- Input radio -->
+          <p>Tipo de Documento</p>
+          <label for="dni" class="vert"
+            ><input
+              type="radio"
+              name="documento"
+              id="dni"
+              value="dni"
+            />DNI</label
+          ><label for="cuil" class="vert"
+            ><input type="radio" name="documento" id="cuil" />CUIL</label
+          ><label for="cuit" class="vert"
+            ><input type="radio" name="documento" id="cuit" />CUIT</label
+          >
+
+          <br />
+
+          <!-- input file Imagen documento -->
+          <label for="imagen">Imagen Documento</label>
+          <input
+            type="file"
+            name="imagen"
+            id="imagen"
+            accept=".jpeg, .png, .pdf"
+            multiple
+          />
+
+          <!-- input date Fecha nacimiento -->
+          <label for="nacimiento">Fecha de Nacimiento</label>
+          <input
+            type="date"
+            name="nacimiento"
+            id="nacimiento"
+            value="2023-03-18"
+            min="2023-03-15"
+          />
+        </fieldset>
+        <fieldset>
+          <legend>Lenguajes</legend>
+          <p>Seleccione los lenguajes que conoce</p>
+          <label for="HTML5"
+            ><input
+              type="checkbox"
+              name="lenguajes"
+              id="HTML5"
+              value="HTML5"
+            />HTML5</label
+          ><label for="CSS"
+            ><input
+              type="checkbox"
+              name="lenguajes"
+              id="CSS"
+              value="CSS"
+            />CSS</label
+          ><label for="JS"
+            ><input
+              type="checkbox"
+              name="lenguajes"
+              id="JS"
+              value="JS"
+            />JS</label
+          >
+
+          <!-- input checkbox -->
+        </fieldset>
+
+        <!-- input select con optgroup-->
+        <fieldset>
+          <legend>Trabajo</legend>
+
+          <label for="modalidad">Modalidad de trabajo</label>
+
+          <select name="modalidad" id="modalidad">
+            <optgroup label="Modalidad">
+              <option value="remoto">Remoto</option>
+              <option value="oficina">Oficina</option>
+            </optgroup>
+
+            <optgroup label="Tiempo">
+              <option value="medioTiempo">Medio Tiempo</option>
+              <option value="jornadaCompleta">Jornada Completa</option>
+            </optgroup>
+          </select>
+        </fieldset>
+
+        <!-- input color -->
+        <label for="miColor">Seleccione su color favorito:</label>
+        <input type="color" id="miColor" name="miColor" value="#ff0000" /> 
+
+        <!-- input checkbox único -->
+        <input type="checkbox" name="terminos" required />
+        <label for="terminos">Acepto los términos.</label>
+
+        <!-- input submit y reset -->
+        <input type="reset" value="Resetear" />
+        <input type="submit" value="Enviar" />
+        <!-- Para poder anidar una imagen o un ícono
+            <button type="submit"><img src="" alt=""></button>-->
+        <!--<a> cuando necesite navegar a otra documento u otra sección-->
+      </form>
+    </div>
+  </body>
+</html>

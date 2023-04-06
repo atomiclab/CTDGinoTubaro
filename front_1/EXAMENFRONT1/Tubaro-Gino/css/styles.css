@@ -1,0 +1,629 @@
+  /* Examen de Front end 1
+  /* Alumno: Gino Tubaro
+  /* Fecha abril 2023
+  /* Profesora Karin Stricker
+  /* Carrera Certified Tech Developer - Digital House */
+
+  @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+  * {
+      box-sizing: border-box;
+      font-family: 'Be Vietnam Pro', sans-serif, Arial, Helvetica;
+      font-size: 16px;
+      margin: 0;
+      padding: 0;
+  }
+
+  :root {
+      --primary-color: #8B48BF;
+      --mobile-color: #3CDDF3;
+
+      --text-color: #b3b2b7;
+      --footer-color: #1E1E26;
+      --title-color: #232851;
+      --nav-color: #232E52;
+
+      --secondary-color: #f9f9f9;
+      --bg-color: #8B48BF;
+  }
+
+  h1 {
+      animation: fadeder 1s ease-in;
+      color: var(--title-color);
+      font-size: 4.5vw;
+      font-weight: 500;
+      text-align: right;
+
+  }
+
+  h2 {
+      animation: fadeder 1s ease-in;
+      font-size: 2vw;
+      font-weight: 500;
+      line-height: 26px;
+      padding: 28px 0;
+      text-align: right;
+  }
+
+  nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+
+  }
+
+  nav ul li {
+      padding: 5px 20px;
+  }
+
+  nav ul li a {
+      color: var(--nav-color);
+      position: relative;
+      text-decoration: none;
+  }
+
+  nav ul li a::before {
+      background-color: var(--text-color);
+      bottom: 0;
+      content: '';
+      height: 2px;
+      left: 0;
+      position: absolute;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform .3s;
+      width: 100%;
+  }
+
+  nav ul li a:hover::before {
+      transform-origin: left;
+      transform: scaleX(1);
+  }
+
+  nav ul li a:hover {
+      color: var(--text-color);
+  }
+
+  .divfooter {
+      align-items: center;
+      background-color: var(--footer-color);
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+  }
+
+
+  /*ANIMACIONES*/
+  @keyframes zoomIn {
+      0% {
+          opacity: 0;
+          transform: scale(.3);
+      }
+
+      100% {
+          opacity: 1;
+      }
+  }
+
+  @keyframes latido {
+      0% {
+          transform: scale(1);
+      }
+
+      100% {
+          transform: scale(1.5);
+      }
+  }
+
+  @keyframes fadeder {
+      0% {
+          opacity: 0;
+          transform: translateX(50px);
+      }
+
+      100% {
+          opacity: 1;
+          transform: translateX(0);
+      }
+  }
+
+
+  /* BOTONES*/
+  .btn {
+      animation: zoomIn 1.5s alternate;
+      background-color: var(--primary-color);
+      border-radius: 50px;
+      border: none;
+      color: white;
+      cursor: pointer;
+      height: 44px;
+      text-align: center;
+      text-decoration: none;
+      width: 134px;
+  }
+
+  .btn:hover {
+      background-color: var(--mobile-color);
+  }
+
+  .shadow {
+      box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+  }
+
+  .invert {
+      background-color: white;
+      box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+      color: var(--bg-color);
+
+  }
+
+  .btngo {
+      animation: zoomIn 1.5s alternate;
+      background-color: var(--primary-color);
+      border-radius: 50px;
+      border: none;
+      color: white;
+      cursor: pointer;
+      height: 42px;
+      text-align: center;
+      text-decoration: none;
+      width: 63px;
+  }
+
+  .btngo:hover {
+      background-color: var(--mobile-color);
+  }
+
+  .aclara {
+      opacity: 70%;
+  }
+
+  /* FIN BOTONES*/
+  /*HEADER*/
+  .mainheader {
+      align-items: center;
+      display: flex;
+      height: 175px;
+      justify-content: space-around;
+      padding: 35px 0;
+  }
+
+  .logo {
+      animation: zoomIn 1.5s alternate;
+      padding-left: 10px;
+  }
+
+
+
+
+
+
+  /*HEADER*/
+  /*MAIN*/
+  .banner {
+      display: flex;
+      justify-content: space-around;
+      padding: 90px 50px;
+  }
+
+  .guy {
+      flex: 1;
+      width: 100%;
+  }
+
+  .guy img {
+      min-width: 300px;
+      width: 100%;
+  }
+
+  .event-title {
+      align-items: flex-end;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+  }
+
+
+
+  /*Section PROS*/
+  .pros {
+      align-items: center;
+      background-color: var(--bg-color);
+      color: white;
+      display: flex;
+      justify-content: space-evenly;
+      padding: 40px 150px;
+  }
+
+  .pros-main,
+  .pros-description {
+      box-sizing: border-box;
+      display: flex;
+      flex: 1;
+      min-width: 240px;
+      padding: 0 20px;
+  }
+
+  .alignright {
+      justify-content: flex-end;
+  }
+
+  .pros-main p {
+      font-weight: 700;
+      font-size: 30px;
+
+  }
+
+  .pros-description p {
+      font-weight: 500;
+      font-size: 16px;
+
+  }
+
+  .flexcards {
+      background-color: var(--secondary-color);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px 0;
+  }
+
+  .light {
+      width: 50%;
+  }
+
+  .heavy {
+      width: 100%;
+  }
+
+  .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-bottom: 40px;
+      width: 50%;
+  }
+
+  .headerhighlight {
+      align-items: center;
+      display: flex;
+      padding-left: 10px;
+  }
+
+  .numberhighlight {
+      align-items: center;
+      background-color: var(--bg-color);
+      border-radius: 30px;
+      color: white;
+      display: flex;
+      font-weight: 700;
+      height: 43px;
+      justify-content: center;
+      width: 69px;
+  }
+
+  .texthightlight {
+      font-weight: 700;
+      padding-left: 30px;
+  }
+
+  .descriptionhighlight {
+      color: var(--text-color);
+      line-height: 25px;
+      padding-left: 100px;
+      padding-right: 30px;
+
+  }
+
+  /* Best of the month*/
+
+  .BoM {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 50px;
+  }
+
+  .BoM h3 {
+      font-size: 40px;
+      font-weight: 700;
+      padding: 100px 0;
+  }
+
+  .BoM-cards {
+      display: flex;
+      padding-bottom: 30px;
+  }
+
+  .BoM-article {
+      align-items: center;
+      background-color: var(--secondary-color);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+  }
+
+  .pfp {
+      position: relative;
+      top: -20px;
+  }
+
+  .BoM-name {
+      color: var(--title-color);
+      font-weight: 700;
+  }
+
+  .BoM-desc {
+      color: var(--text-color);
+      font-weight: 500;
+      padding: 20px;
+      text-align: center;
+  }
+
+  /* Best of the month*/
+  /* * * * * * * * * * * * *FOOTER * * * * * * * * * * * * * */
+  .column-footer {
+      display: flex;
+      flex-direction: column;
+      min-width: 200px;
+      padding: 30px 10px 30px 20px;
+  }
+
+  .social {
+      align-items: flex-end;
+      display: flex;
+      height: 65px;
+  }
+
+  .social a {
+      color: white;
+      padding: 5px;
+      text-decoration: none;
+  }
+
+  .links {
+      display: flex;
+  }
+
+  .column-footer ul {
+      list-style: none;
+  }
+
+  .column-footer ul li a {
+      color: inherit;
+      line-height: 30px;
+      text-decoration: none;
+
+  }
+
+  .inboxform {
+      border-radius: 50px;
+      border: none;
+      color: var(--text-color);
+      height: 44px;
+      padding: 10px;
+      width: 200px;
+  }
+
+  .copy {
+      background-color: #1E1E26;
+      border-top: none;
+      color: #8C8C94;
+      display: block;
+      margin-top: 0;
+      padding: 0 30px 30px 0;
+      text-align: right;
+
+  }
+
+
+  .hamburguesa {
+      display: none;
+  }
+
+  /* * * * * * * *  Estilos para dispositivos de pantallas chiquitas* * * * * * * * * * * * * */
+  @media (max-width: 480px) {
+      .menu-nav {
+          display: none;
+      }
+
+      h1 {
+          font-size: 30px;
+
+      }
+
+      h2 {
+          font-size: 15px;
+
+      }
+
+      .btn.shadow {
+          display: none;
+      }
+
+      .hamburguesa {
+          display: inline-block;
+      }
+
+      .pros {
+          background-color: var(--mobile-color);
+          flex-direction: column;
+          padding: 10px;
+          text-align: center;
+      }
+
+
+      .pros-description {
+          padding-top: 50px;
+      }
+
+      .texthightlight {
+          color: #1E1E26;
+      }
+
+      .flexcards {
+          padding-left: 20px;
+      }
+
+      .headerhighlight {
+          background-color: rgba(139, 72, 191, 0.3);
+          border-radius: 30px 0 0 30px;
+          padding-left: 0;
+      }
+
+      .guy {
+          padding: 0 10px 50px 10px;
+          width: 100%;
+      }
+
+      .banner {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 10px;
+      }
+
+      .guy img {
+          height: auto;
+          min-width: 200px;
+          width: 100%;
+      }
+
+
+      .descriptionhighlight {
+          padding: 10px 0 0 10px;
+          width: auto;
+      }
+
+      .card {
+          width: auto;
+      }
+
+      .BoM-cards article:nth-child(1),
+      .BoM-cards article:nth-child(3) {
+          display: none;
+      }
+
+      .BoM h3 {
+          text-align: center;
+      }
+
+      .divfooter {
+          flex-direction: column-reverse;
+      }
+
+      .column-footer {
+          align-items: center;
+          display: flex;
+          flex-direction: column-reverse;
+          min-width: 100px;
+          padding: 20px 0;
+
+      }
+
+      .column-footer ul li {
+          padding: 5px 0;
+      }
+
+      .copy {
+          text-align: center;
+      }
+
+      .links {
+          align-items: flex-start;
+          justify-content: space-around;
+      }
+
+      .social {
+          align-items: flex-start;
+          display: flex;
+          justify-content: space-around;
+      }
+
+      .inboxform {
+          width: 180px;
+      }
+
+      .alignright {
+          justify-content: center;
+      }
+
+      .azul {
+          background-color: var(--nav-color);
+          color: white;
+      }
+
+      .copy {
+          padding: 20px 0;
+          text-align: center;
+      }
+
+      .fullwidth {
+          width: 100%;
+      }
+
+      .aligncenter {
+          text-align: center;
+      }
+
+      .alignleft {
+          text-align: left;
+      }
+
+      .btn:hover {
+          background-color: var(--text-color);
+      }
+
+      /************** MENU HAMBURGUESA ****************/
+
+      .button {
+          cursor: pointer;
+          /* Aunque solo se mostraria en celular le mando un pointer */
+          /*pero si le mandamos un pseudoelemento para el icono*/
+      }
+      .button::before {
+          /* + animacion del latido*/
+          animation: latido 1.5s infinite alternate;
+          content: "\f0c9";
+          display: inline-block;
+          font-family: "Font Awesome 5 Free";
+          font-size: 32px;
+          font-style: normal;
+          font-variant: normal;
+          font-weight: 900;
+          text-rendering: auto;
+      }
+      .closebutton {
+          /*para destacar el toggle del menu*/
+          display: block;
+          padding: 20px;
+          color: #fff;
+          text-decoration: none;
+          font-size: 25px;
+      }
+      .menu {
+          /* Estilos del menu */
+          background-color: var(--nav-color);
+          height: 100%;
+          position: fixed;
+          right: -250px;
+          top: 0;
+          transition: all 0.3s ease-in-out;
+          width: 250px;
+          z-index: 1;
+      }
+      .menu a {
+          color: #fff;
+          display: block;
+          padding: 20px;
+          text-decoration: none;
+      }
+      #toggle:checked~.menu {
+          /* para mover el menu */
+          right: 0;
+      }
+  }
